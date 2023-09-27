@@ -197,7 +197,7 @@ const HomeFeature: FC = () => {
             </Typography>
 
             <Typography sx={{ color: 'text.secondary', mb: 2, ml: { xs: 0, md: 4 } }}>
-            Discover a chatting experience that&apos;s uniquely yours with Enibly Bot's Personalized Prompt feature. Now, you have the control to adjust the conversation to your liking, making interactions feel just right.
+            Discover a chatting experience that&apos;s uniquely yours with Enibly Bot&apos;s Personalized Prompt feature. Now, you have the control to adjust the conversation to your liking, making interactions feel just right.
             </Typography>
 
             <Grid container spacing={2} sx={{ mr: { xs: 0, md: 2 } }}>
