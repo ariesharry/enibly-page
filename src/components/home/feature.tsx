@@ -6,40 +6,40 @@ import { styled } from '@mui/material/styles'
 import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography'
 // import CircularProgress from '@mui/material/CircularProgress'
-import LinearProgress, { linearProgressClasses } from '@mui/material/LinearProgress'
+// import LinearProgress, { linearProgressClasses } from '@mui/material/LinearProgress'
 import { data } from './feature.data'
 import { data2 } from './feature.data'
 
-interface LinearProgressProps {
-  order: number
-}
+// interface LinearProgressProps {
+//   order: number
+// }
 
-const BorderLinearProgress = styled(LinearProgress, {
-  shouldForwardProp: (prop) => prop !== 'color',
-})<LinearProgressProps>(({ theme, order }) => ({
-  height: 6,
-  borderRadius: 5,
-  [`&.${linearProgressClasses.colorPrimary}`]: {
-    backgroundColor: theme.palette.grey[200],
-  },
-  [`& .${linearProgressClasses.bar}`]: {
-    borderRadius: 5,
-    ...(order === 1 && {
-      backgroundColor: '#f303ff',
-    }),
-    ...(order === 2 && {
-      backgroundColor: '#26e8bd',
-    }),
-    ...(order === 3 && {
-      backgroundColor: '#0063ff',
-    }),
-  },
-}))
+// const BorderLinearProgress = styled(LinearProgress, {
+//   shouldForwardProp: (prop) => prop !== 'color',
+// })<LinearProgressProps>(({ theme, order }) => ({
+//   height: 6,
+//   borderRadius: 5,
+//   [`&.${linearProgressClasses.colorPrimary}`]: {
+//     backgroundColor: theme.palette.grey[200],
+//   },
+//   [`& .${linearProgressClasses.bar}`]: {
+//     borderRadius: 5,
+//     ...(order === 1 && {
+//       backgroundColor: '#f303ff',
+//     }),
+//     ...(order === 2 && {
+//       backgroundColor: '#26e8bd',
+//     }),
+//     ...(order === 3 && {
+//       backgroundColor: '#0063ff',
+//     }),
+//   },
+// }))
 
 const HomeFeature: FC = () => {
   const [isFullscreen, setIsFullscreen] = useState(false);  // Define a state variable
 
-  const toggleFullscreen = () => {
+  const toggleFullscreen = (): void => {
     setIsFullscreen(!isFullscreen);  // Toggle the state variable
   };
   return (
@@ -111,7 +111,7 @@ const HomeFeature: FC = () => {
             </Typography>
 
             <Typography sx={{ color: 'text.secondary', mb: 2, ml: { xs: 0, md: 4 } }}>
-            Unlock the potential of your own data with Enibly Bot. Whether it's data from the web, files, or GitHub, Enibly Bot is designed to integrate seamlessly, providing you with the answers you need.
+            Unlock the potential of your own data with Enibly Bot. Whether it&apos;s data from the web, files, or GitHub, Enibly Bot is designed to integrate seamlessly, providing you with the answers you need.
             </Typography>
 
             <Grid container spacing={2} sx={{ ml: { xs: 0, md: 2 } }}>
@@ -197,7 +197,7 @@ const HomeFeature: FC = () => {
             </Typography>
 
             <Typography sx={{ color: 'text.secondary', mb: 2, ml: { xs: 0, md: 4 } }}>
-            Discover a chatting experience that’s uniquely yours with Enibly Bot's Personalized Prompt feature. Now, you have the control to adjust the conversation to your liking, making interactions feel just right..
+            Discover a chatting experience that&apos;s uniquely yours with Enibly Bot's Personalized Prompt feature. Now, you have the control to adjust the conversation to your liking, making interactions feel just right.
             </Typography>
 
             <Grid container spacing={2} sx={{ mr: { xs: 0, md: 2 } }}>

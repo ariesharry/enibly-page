@@ -4,8 +4,6 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import styled from '@emotion/styled';
 import CardHeader from '@mui/material/CardHeader';
-import Avatar from '@mui/material/Avatar';
-import DocumentScannerIcon from '@mui/icons-material/DocumentScanner';
 
 const StyledCard = styled(Card)`
   border-radius: 16px;
