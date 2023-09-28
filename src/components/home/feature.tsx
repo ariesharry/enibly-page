@@ -38,10 +38,16 @@ import { data2 } from './feature.data'
 
 const HomeFeature: FC = () => {
   const [isFullscreen, setIsFullscreen] = useState(false);  // Define a state variable
+  const [isFullscreen1, setIsFullscreen1] = useState(false);  // Define a state variable
 
   const toggleFullscreen = (): void => {
     setIsFullscreen(!isFullscreen);  // Toggle the state variable
   };
+
+  const toggleFullscreen1 = (): void => {
+    setIsFullscreen1(!isFullscreen1);  // Toggle the state variable
+  };
+
   return (
     <Box id="feature" sx={{ py: { xs: 10, md: 14 }, backgroundColor: 'background.paper' }}>
       <Container>
@@ -58,9 +64,9 @@ const HomeFeature: FC = () => {
                 padding: 2,  // Added padding
                 mx: 'auto',
               }} 
-              onClick={toggleFullscreen}
+              onClick={toggleFullscreen1}
             >
-              {isFullscreen ? (
+              {isFullscreen1 ? (
                 <Box sx={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: 9999 }}>
                   <Image src="/images/home-feature.png" layout="fill" objectFit="contain" quality={97} alt="Feature img" />
                 </Box>
